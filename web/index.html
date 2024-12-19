@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中文电气词表</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <main>
+        <div class="main-title">
+            <h1>"中文+电气专业"词表</h1>
+            <div class="input-group">
+                <input required="" type="text" name="text" autocomplete="off" class="input" id="check-input">
+                <label class="user-label">Word</label>
+                <button class="button" id="check-btn">
+                    <span class="button-content">Check </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="card-switch">
+                <label class="switch">
+                   <input type="checkbox" class="toggle" id="dict-switch">
+                   <span class="slider"></span>
+                   <span class="card-side"></span>
+                </label>
+            </div>
+       </div>
+
+        <div class="card-container">
+            <div class="card1"></div>
+            <div class="card2"></div>
+            <div class="card3">
+                <div class="card-header">
+                    <span class="card-title" id="card-title"></span>
+                    <div class="card-title-side">
+                        <span class="card-side-up" id="card-side-up"></span>
+                        <span class="card-side-down" id="card-side-down"></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>词性分析</h3>
+                    <ul id="word-parts-list">
+                    </ul>
+                    <h3>高频搭配</h3>
+                    <ul class="high-freq-pair" id="high-freqpair-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="button-box">
+            <button class="button-page page-last" id="last-btn">
+                <span class="text-page">Last</span>
+            </button>
+            <span style="width: 20px;"></span>
+            <button class="button-page page-next" id="next-btn">
+                <span class="text-page">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
